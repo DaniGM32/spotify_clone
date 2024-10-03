@@ -7,6 +7,7 @@ import { useMemo } from "react";
 
 import Box from "./box";
 import SidebarItem from "./sidebar_item";
+import SongLibrary from "./song_library"
 
 interface sidebar_properties {
     children: React.ReactNode;
@@ -64,9 +65,12 @@ const sidebar: React.FC<sidebar_properties> = ({
                         </div>
                     </Box>
                     <Box className="overflow-y-auto h-full">
-                        song library
+                        <SongLibrary/>
                     </Box>
             </div>
+            <main className="overflow-y-auto h-full flex-1 py-2">
+                {children}
+            </main>
         </div>
     );
 }
