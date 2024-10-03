@@ -49,7 +49,8 @@ const sidebar: React.FC<sidebar_properties> = ({
                         <div
                             className="
                                 flex
-                                flex-colgap-y-4
+                                flex-col
+                                gap-y-4
                                 py-4
                                 px-5
                             "
